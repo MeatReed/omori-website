@@ -25,20 +25,20 @@ export default {
   data() {
     return {
       styleBackgroundImage: {
-        'background-image': 'url(/omoriwebgif2-w1200.gif)',
+        'background-image': 'url(/omori-website/omoriwebgif2-w1200.gif)',
       },
       images: [
-        '/omoriwebgif1-w1200.gif',
-        '/omoriwebgif2-w1200.gif',
-        '/omoriwebgif3-w1200.gif',
-        '/omoriwebgif4-w1200.gif',
-        '/omoriwebgif5-w1200.gif',
-        '/omoriwebgif6-w1200.gif',
-        '/omoriwebgif7-w1200.gif',
-        '/omoriwebgif8-w1200.gif',
-        '/omoriwebgif9-w1200.gif',
-        '/omoriwebgif10-w1200.gif',
-        '/omoriwebgif11-w1200.gif',
+        '/omori-website/omoriwebgif1-w1200.gif',
+        '/omori-website/omoriwebgif2-w1200.gif',
+        '/omori-website/omoriwebgif3-w1200.gif',
+        '/omori-website/omoriwebgif4-w1200.gif',
+        '/omori-website/omoriwebgif5-w1200.gif',
+        '/omori-website/omoriwebgif6-w1200.gif',
+        '/omori-website/omoriwebgif7-w1200.gif',
+        '/omori-website/omoriwebgif8-w1200.gif',
+        '/omori-website/omoriwebgif9-w1200.gif',
+        '/omori-website/omoriwebgif10-w1200.gif',
+        '/omori-website/omoriwebgif11-w1200.gif',
       ],
     }
   },
@@ -65,6 +65,8 @@ export default {
   top: 0;
   left: 0;
   z-index: 1;
+  padding-top: 138px !important;
+  background-origin: content-box !important;
 }
 
 @font-face {
@@ -89,10 +91,6 @@ p {
   border-top: 1px solid rgb(255, 255, 255) !important;
 }
 
-.v-main__wrap {
-  padding-top: 138px !important;
-}
-
 .header_title {
   width: auto;
   height: 89px;
@@ -115,7 +113,7 @@ p {
   left: 0;
   z-index: 200;
   text-align: center;
-  background: url(/header_static.gif) center center repeat !important;
+  background: url(/omori-website/header_static.gif) center center repeat !important;
 }
 
 .v-tab:hover .eye_active {
