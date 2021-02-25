@@ -1,5 +1,8 @@
 # omori-website
 
+Images:
+https://i.imgur.com/oQ4Jy8o.png
+
 ## Build Setup
 
 ```bash
