@@ -1,12 +1,20 @@
 <template>
   <v-app>
     <Header />
-    <v-main>
+    <v-main :style="styleBackgroundImage">
       <nuxt />
     </v-main>
     <v-footer app color="black" height="96">
       <v-col class="text-center" cols="12">
-        {{ new Date().getFullYear() }} — <strong>Footer</strong>
+        {{ new Date().getFullYear() }} —
+        <strong
+          ><a
+            href="https://github.com/MeatReed/omori-website"
+            target="_blank"
+            rel="noopener noreferrer"
+            >Github</a
+          ></strong
+        >
       </v-col>
     </v-footer>
   </v-app>
@@ -15,12 +23,50 @@
 <script>
 export default {
   data() {
-    return {}
+    return {
+      styleBackgroundImage: {
+        'background-image': 'url(/omoriwebgif2-w1200.gif)',
+      },
+      images: [
+        '/omoriwebgif1-w1200.gif',
+        '/omoriwebgif2-w1200.gif',
+        '/omoriwebgif3-w1200.gif',
+        '/omoriwebgif4-w1200.gif',
+        '/omoriwebgif5-w1200.gif',
+        '/omoriwebgif6-w1200.gif',
+        '/omoriwebgif7-w1200.gif',
+        '/omoriwebgif8-w1200.gif',
+        '/omoriwebgif9-w1200.gif',
+        '/omoriwebgif10-w1200.gif',
+        '/omoriwebgif11-w1200.gif',
+      ],
+    }
+  },
+  watch: {
+    $route() {
+      this.styleBackgroundImage = {
+        'background-image': `url(${
+          this.images[Math.floor(Math.random() * this.images.length)]
+        })`,
+      }
+    },
   },
 }
 </script>
 
 <style>
+.v-main {
+  width: 100%;
+  height: 100%;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+
 @font-face {
   font-family: 'OMORI_GAME2';
   src: local('OMORI_GAME2'),
@@ -39,19 +85,7 @@ p {
   font-size: 30px;
 }
 
-.v-main__wrap {
-  width: 100%;
-  height: 100%;
-  background-repeat: no-repeat;
-  background-position: center center;
-  background-size: cover;
-  position: fixed;
-  top: 0;
-  left: 0;
-  z-index: 1;
-}
-
-.v-footer {
+.v-sheet.v-footer {
   border-top: 1px solid rgb(255, 255, 255) !important;
 }
 
