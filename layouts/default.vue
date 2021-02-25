@@ -61,7 +61,7 @@ export default {
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
-  position: fixed;
+  background-attachment: fixed;
   top: 0;
   left: 0;
   z-index: 1;

@@ -1,7 +1,29 @@
 <template>
   <v-container>
     <h1>Bienvenue !</h1>
-    <p>Site vitrine démonstration.</p>
+    <p>Site vitrine demonstration.</p>
+    <h1>Bienvenue !</h1>
+    <p>Site vitrine demonstration.</p>
+    <h1>Bienvenue !</h1>
+    <p>Site vitrine demonstration.</p>
+    <h1>Bienvenue !</h1>
+    <p>Site vitrine demonstration.</p>
+    <h1>Bienvenue !</h1>
+    <p>Site vitrine demonstration.</p>
+    <h1>Bienvenue !</h1>
+    <p>Site vitrine demonstration.</p>
+    <h1>Bienvenue !</h1>
+    <p>Site vitrine demonstration.</p>
+    <h1>Bienvenue !</h1>
+    <p>Site vitrine demonstration.</p>
+    <h1>Bienvenue !</h1>
+    <p>Site vitrine demonstration.</p>
+    <h1>Bienvenue !</h1>
+    <p>Site vitrine demonstration.</p>
+    <h1>Bienvenue !</h1>
+    <p>Site vitrine demonstration.</p>
+    <h1>Bienvenue !</h1>
+    <p>Site vitrine demonstration.</p>
   </v-container>
 </template>
 
